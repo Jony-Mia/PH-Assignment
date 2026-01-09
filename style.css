@@ -24,6 +24,10 @@
 .btn:hover{
     background: #2a8cb8;
 }
+.indicator-part:hover, .indicator-part p:hover{
+    background: #2a8cb8;
+    color: white;
+}
 
 
 .btn2 {
@@ -35,6 +39,9 @@
     color: white;
     font-family: "Inter", sans-serif;
     font-weight: 600;
+}
+.btn2:hover{
+background: #2a8cb8;
 }
 
 /* Header Design */
@@ -71,7 +78,6 @@ header nav li a {
     padding: 10px;
     border-radius: 50px;
     width: 30%;
-    /* height: 40px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -317,7 +323,7 @@ footer{
 }
 .social-icons h3{
     color: white;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 .foot .footer-box ul li i{
     font-size: 25px;
@@ -326,6 +332,7 @@ footer{
 section.footer-content hr{
     width: 90%;
     margin: auto;
+    opacity: 0.3;
 }
 section.footer-content{
     text-align: center;
