@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Global Css */
 
 .inter {
@@ -10,8 +11,8 @@
     font-optical-sizing: auto;
 }
 
-.btn{
-    border:none;
+.btn {
+    border: none;
     padding: 15px 16px;
     border-radius: 5px;
     background: #469165;
@@ -20,7 +21,12 @@
     font-weight: 600;
     font-size: 16px;
 }
-.btn2{
+.btn:hover{
+    background: #2a8cb8;
+}
+
+
+.btn2 {
     border: 3px solid #7c8690;
     padding: 15px 16px;
     border-radius: 5px;
@@ -30,22 +36,26 @@
     font-family: "Inter", sans-serif;
     font-weight: 600;
 }
+
 /* Header Design */
-header{
+header {
     padding: 16px 120px;
 }
-header nav{
+
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header nav ul{
+
+header nav ul {
     align-items: center;
     display: flex;
     list-style: none;
     gap: 32px
 }
-header nav li a{
+
+header nav li a {
     text-decoration: none;
     color: #000;
     font-weight: bold;
@@ -56,7 +66,7 @@ header nav li a{
 
 
 /* Hero banner */
-.indicator-part{
+.indicator-part {
     background: white;
     padding: 10px;
     border-radius: 50px;
@@ -67,18 +77,21 @@ header nav li a{
     justify-content: center;
     gap: 10px;
 }
-.indicator{
-    width:  15px;
+
+.indicator {
+    width: 15px;
     height: 15px;
     background: #469165;
     border: 4px solid #9fc6ae;
     border-radius: 50%;
 }
-.indicator-part p{
+
+.indicator-part p {
     font-size: 16px;
     color: #469165;
 }
-.hero-banner{
+
+.hero-banner {
     background-image: url('assets/hero-bg.png');
     background-repeat: no-repeat;
     background-position: center center;
@@ -86,7 +99,8 @@ header nav li a{
     display: flex;
     justify-content: center;
 }
-.banner{
+
+.banner {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,89 +108,233 @@ header nav li a{
     padding: 100px 120px 134px 120px;
 }
 
-.hero-banner .banner .banner-text p{
+.hero-banner .banner .banner-text p {
     width: 660px;
     text-align: center;
     color: white;
     font-size: 18px;
     line-height: 30px;
 }
-.banner-headings h1{
+
+.banner-headings h1 {
     font-size: 72px;
     line-height: 84px;
     color: #fff;
 }
-.banner-headings h1:nth-child(2){
+.banner-headings h1:nth-child(2) {
     color: #2faa64;
 }
-.banner-footer{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    /* justify-content: space-around; */
-}
-.banner-footer>button{
+.banner-footer {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.card-box-area{
-    padding-top: 50px;
+.banner-footer>button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.card-box-area {
+    padding: 80px 0 0 ;
     background: #fbfbfb;
 }
-.card-box-header{
-}
-.card-box-area .card-box-header h1{
-  
+
+.card-box-area .card-box-header h1 {
     font-family: 'Inter';
     font-weight: 700;
-    font-size: 48px;   
+    font-size: 48px;
     text-align: center;
-  
 }
-
-.card-box-area .card-box-header h2{
-  
+.card-box-area .card-box-header h2 {
     font-family: "Inter", sans-serif;
-    font-size: 16px;   
+    font-size: 16px;
     text-align: center;
     color: #627382;
     margin-block: 10px;
 }
-.card-box{
-    margin-top: 40px ;
+
+.card-box {
+    margin-top: 40px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap:20px 60px
 }
-.card-heading h1{
+
+.card-heading h1 {
     margin-top: 10px;
     text-align: center;
     font-family: "Inter", sans-serif;
     font-size: 24px;
 }
+
 .card-icon {
 
     display: flex;
     justify-content: center;
 }
-.card-icon img{
+
+.card-icon i {
     background: #f95555;
     width: 60px;
-    border-radius: 50%;
-    padding: 16px;
+    border-radius: 50px;
+    padding: 15px;
+    display: block;
+    color: white;
 
 }
-.card{
-    width: 322px;
-    padding: 24px;
-    box-shadow: 0 0 5px rgb(200, 199, 199);
-    border-radius: 8px;
+.card-icon img {
+    background: #f95555;
+    width: 60px;
+    border-radius: 50px;
+    padding: 15px;
+    display: block;
+    color: white;
 }
-.card-body{
+
+.card {
+    width: 320px;
+    padding: 24px;
+    box-shadow: 0px -3px 5px rgb(200, 199, 199);
+    background: #fff;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
     font-size: 16px;
     margin: 15px 0;
     text-align: center;
     color: #627382;
+}
 
+.brain {
+    padding: 80px 0 0 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.brain .brain-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    width: 95%;
+}
+
+
+.brain-heading{
+padding: 20px 0 0 20px;
+
+}
+.brain-heading h1 {
+    font-size: 48px;
+    text-transform: capitalize;
+    color: #001931
+}
+.brain-heading h4 {
+    /* font-size: 48px; */
+    color: #2faa64;
+    font-weight: 400;
+}
+
+.brain-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 10px;
+}
+
+.brain-content ul li {
+    list-style-image: url('assets/CheckCircle.png') ;
+    margin: 10px 30px;
+    font-weight: 500;
+    /* padding: 10px; */
+}
+
+.brain-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px 10px;
+    padding: 0px 0 0 20px ;
+
+}
+.brain-content p {
+    color: #627382;
+    width: 80%;
+    font-weight: 500;
+    line-height: 25px;
+}
+.cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+
+}
+.cta-box{
+    margin-top: 30px;
+    padding: 80px;
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f7f6f2;
+    gap: 20px;
+    border-radius: 15px;
+}
+.cta .cta-box p{
+    color: #697987;
+    width: 55%;
+    font-weight: 500;
+    text-align: center;
+    line-height: 25px;
+}
+.cta .cta-box h2{
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+.cta .cta-box .btn{
+    text-align: center;
+    display: flex;
+    gap: 10px;
+}
+.foot .footer-box{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    background: #001931;
+    padding: 100px;
+}
+.foot .footer-box ul{
+    display: flex;
+    gap: 10px;
+    align-content: center;
+    list-style: none;
+}
+.social-icons h3{
+    color: white;
+    margin: 10px 0;
+}
+.foot .footer-box ul li i{
+    font-size: 25px;
+    color: white;
+}
+section.footer-content hr{
+    width: 90%;
+    margin: auto;
+}
+section.footer-content{
+    text-align: center;
+    padding: 40px 20px;
+    color:white;
+    background: #001931;
+
+}
+section.footer-content p{
+    padding-top: 40px ;
+    display: block;
 }
